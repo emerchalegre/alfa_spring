@@ -1,12 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.aula.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import br.com.aula.model.Pessoa;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -16,12 +14,25 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MeuController {
     
     @RequestMapping("/inicio")
-    public String index(){
+    public String index(HttpSession session){
+        if(session.getAttribute("usuario") == null)
+            return "redirect:login";
         return "index";
     }
     
     @RequestMapping("/cadastrarAlguem")
-    public String cadastro(){
+    public String cadastro(HttpSession session){
+        if(session.getAttribute("usuario") == null)
+            return "redirect:login";
         return "pessoas/cadastroPessoa";
+    }
+    
+    @RequestMapping("/persistePessoa")
+    public String persistePessoa(HttpSession session, Pessoa p) {
+    	
+    	//m.addAttribute("pessoa", p);
+        session.setAttribute("pessoa", p);
+    	
+    	return "pessoas/mensagemCadastro";
     }
 }

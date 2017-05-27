@@ -1,0 +1,42 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="aula-spring:war exploded">
+    <output-path>$PROJECT_DIR$/classes/artifacts/aula_spring_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="aula-spring" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="cglib-2.2.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="jstl-api.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="jstl-impl.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="org-apache-commons-logging.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-aop-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-aspects-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-beans-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-build-src-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-context-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-context-support-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-core-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-expression-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-framework-bom-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-instrument-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-instrument-tomcat-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-jdbc-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-jms-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-messaging-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-orm-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-oxm-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-test-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-tx-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-web-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-webmvc-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-webmvc-portlet-4.0.1.RELEASE.jar" module-name="aula-spring" />
+          <element id="library" level="module" name="spring-websocket-4.0.1.RELEASE.jar" module-name="aula-spring" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="aula-spring/web/Web2" />
+      <element id="javaee-facet-resources" facet="aula-spring/web/Web" />
+    </root>
+  </artifact>
+</component>

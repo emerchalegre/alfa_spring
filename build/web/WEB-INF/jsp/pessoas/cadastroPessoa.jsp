@@ -10,15 +10,29 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="<c:url value="resources/css/style.css" />" rel="stylesheet" type="text/css" />
+        
+        <link href="<c:url value="resources/css/bootstrap/dist/css/bootstrap.min.css" />" rel="stylesheet" type="text/css" />
         <title>JSP Page</title>
     </head>
     <body>
-
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">WebSiteName</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li><a href="inicio">Inicio</a></li>
+                <li class="active"><a href="cadastrarAlguem">Cliente</a></li>
+                <li><a href="cadastrarConta">Conta</a></li>
+                <li><a href="listarContas">Listar Contas</a></li>
+                <li><a href="transacaoBancaria">Movimentar Contas</a></li>
+              </ul>
+            </div>
+        </nav>
 
         <h1> Preencha o formulário abaixo</h1><br />
 
-        <form action="" method="post">
+        <form action="persistePessoa" method="post">
 
             <!-- DADOS PESSOAIS-->
             <fieldset>
@@ -29,13 +43,13 @@
                             <label for="nome">Nome: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="email">
+                            <input type="text" class="form-control" name="nome">
                         </td>
                         <td>
                             <label for="sobrenome">Sobrenome: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="sobrenome">
+                            <input type="text" class="form-control"  name="sobrenome">
                         </td>
                     </tr>
                     <tr>
@@ -43,9 +57,9 @@
                             <label>Nascimento: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
-                            <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
-                            <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+                            <input type="text" class="form-control" name="dia" size="2" maxlength="2" value="dd"> 
+                            <input type="text" class="form-control" name="mes" size="2" maxlength="2" value="mm"> 
+                            <input type="text" class="form-control" name="ano" size="4" maxlength="4" value="aaaa">
                         </td>
                     </tr>
                     <tr>
@@ -53,7 +67,7 @@
                             <label for="rg">RG: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="rg" size="13" maxlength="13"> 
+                            <input type="text" class="form-control" name="rg" size="13" maxlength="13"> 
                         </td>
                     </tr>
                     <tr>
@@ -61,7 +75,7 @@
                             <label>CPF:</label>
                         </td>
                         <td align="left">
-                            <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+                            <input type="text" class="form-control" name="cpf" size="9" maxlength="9"> - <input type="text" class="form-control" name="cpf2" size="2" maxlength="2">
                         </td>
                     </tr>
                 </table>
@@ -78,13 +92,13 @@
                             <label for="rua">Rua:</label>
                         </td>
                         <td align="left">
-                            <input type="text" name="rua">
+                            <input type="text" class="form-control" name="rua">
                         </td>
                         <td>
                             <label for="numero">Numero:</label>
                         </td>
                         <td align="left">
-                            <input type="text" name="numero" size="4">
+                            <input type="text" class="form-control" name="numero" size="4">
                         </td>
                     </tr>
                     <tr>
@@ -92,7 +106,7 @@
                             <label for="bairro">Bairro: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="bairro">
+                            <input type="text" class="form-control" name="bairro">
                         </td>
                     </tr>
                     <tr>
@@ -136,7 +150,7 @@
                             <label for="cidade">Cidade: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="cidade">
+                            <input type="text" class="form-control" name="cidade">
                         </td>
                     </tr>
                     <tr>
@@ -144,7 +158,7 @@
                             <label for="cep">CEP: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+                            <input type="text" class="form-control" name="cep" size="5" maxlength="5"> - <input type="text" class="form-control" name="cep2" size="3" maxlength="3">
                         </td>
                     </tr>
                 </table>
@@ -160,7 +174,7 @@
                             <label for="email">E-mail: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="email">
+                            <input type="text" class="form-control" name="email">
                         </td>
                     </tr>
                     <tr>
@@ -177,7 +191,7 @@
                             <label for="login">Login de usuário: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="login">
+                            <input type="text" class="form-control" name="login">
                         </td>
                     </tr>
                     <tr>
@@ -199,8 +213,8 @@
                 </table>
             </fieldset>
             <br />
-            <input type="submit">
-            <input type="reset" value="Limpar">
+            <input type="submit" class="btn btn-primary">
+            <input type="reset" class="btn btn-default" value="Limpar">
         </form>
 
 
