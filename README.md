@@ -1,7 +1,7 @@
-Faculdade Alfa Umuarama
-Professor: Edson
-Materia: Frameworks Java
-Alunos:
-	Emerson Chalegre
-	Edson Macoto
-	Fabio Gomes
+Faculdade Alfa Umuarama<br>
+Professor: Edson<br>
+Materia: Frameworks Java<br>
+Alunos:<br>
+	Emerson Chalegre<br>
+	Edson Macoto<br>
+	Fabio Gomes<br>
